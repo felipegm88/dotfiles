@@ -5,3 +5,19 @@
 	excludesfile = /home/felipe/.gitignore
 [init]
 	defaultBranch = main
+[merge]
+	tool = kdiff3
+[mergetool]
+	prompt = false
+	keepBackup = false
+	keepTemporaries = false
+[mergetool "kdiff3"]
+	trustExitCode = false
+	cmd = kdiff3 --L1 \"$MERGED (Base)\" --L2 \"$MERGED (Local)\" --L3 \"$MERGED (Remote)\" -o \"$MERGED\" \"$BASE\" \"$LOCAL\" \"$REMOTE\"
+[diff]
+	tool = kdiff3
+[difftool]
+	prompt = false
+[difftool "kdiff3"]
+	trustExitCode = false
+	cmd = kdiff3 --L1 \"$MERGED (Local)\" --L2 \"$MERGED (Remote)\" \"$LOCAL\" \"$REMOTE\"
