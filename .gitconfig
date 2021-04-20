@@ -1,0 +1,7 @@
+[user]
+	name = Felipe Gallardo
+	email = felipegm88@gmail.com
+[core]
+	excludesfile = /home/felipe/.gitignore
+[init]
+	defaultBranch = main

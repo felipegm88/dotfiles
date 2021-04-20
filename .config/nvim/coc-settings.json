@@ -1,0 +1,5 @@
+{
+    "clangd.disableDiagnostics": true,
+    "clangd.semanticHighlighting": true,
+    "rust-analyzer.inlayHints.enable": false
+}
