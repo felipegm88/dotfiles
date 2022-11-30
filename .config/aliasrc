@@ -4,8 +4,11 @@ alias h='cd ~/hg; ls'
 alias jennic='cd ~/hg/jennic; ls'
 alias pancoordinator='cd ~/hg/jennic/src/pancoordinator; ls'
 alias concentrator='cd ~/hg/jennic/src/concentrator; ls'
-alias microlib='cd ~/hg/microlib/src; ls'
-alias s='ssh camahueto.innovex.cl'
+alias o='cd ~/hg/oxycontroller; ls'
+alias b='cd ~/hg/boya; ls'
+alias m='cd ~/hg/microlib2; ls'
+alias z='cd ~/zephyrproject/zephyr; ls'
+alias s='ssh caicai.innovex.cl'
 alias v='nvim'
 alias vim='nvim'
 alias c='clear'
@@ -28,11 +31,12 @@ alias lt='exa -aT --color=always --group-directories-first' # tree listing
 
 # adding flags
 alias cp="cp -i"                          # confirm before overwriting something
+alias mv="mv -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 
-# bare git repo alias for dotfiles
-#alias config="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
+alias history="history -n 1000"
+alias hr="history | rg "
 
 # clang format Google style
 alias create-style='clang-format --style=Google --dump-config > .clang-format'

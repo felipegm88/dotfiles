@@ -9,6 +9,7 @@ color =
 hgext.extdiff =
 strip =
 rebase =
+uncommit =
 
 [extdiff]
 cmd.kdiff3 =
@@ -23,7 +24,7 @@ cmd.kdiff3 =
 #vimdiff.premerge = keep
 kdiff3.premerge = False
 #kdiff3.args = $base $local $other -o $output
-kdiff3.args = --qall --L1 base --L2 local --L3 other $base $local $other -o $output
+kdiff3.args = --noauto --L1 base --L2 local --L3 other $base $local $other -o $output
 
 [color]
 custom.rev = red
